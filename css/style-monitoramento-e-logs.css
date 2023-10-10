@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+:root {
+    --cor-fundo-fatec-menu-monitoramento-e-logs: #ffff;
+    --cor-fundo-fatec-hover-menu-monitoramento-e-logs: rgb(182, 182, 182);
+    --cor-fundo-referencias-menu-monitoramento-e-logs: rgb(20, 177, 240);
+    --cor-fundo-referencias-hover-menu-monitoramento-e-logs: rgb(8, 117, 189);
+    --cor-fundo-menu-monitoramento-e-logs: rgb(0, 0, 0);
+    --cor-fundo-menu-hover-monitoramento-e-logs: rgb(63, 63, 63);
+    --cor-fundo-menu-visited-monitoramento-e-logs: rgb(105, 52, 196);
+    --cor-primaria-texto-menu-monitoramento-e-logs: rgb(231, 241, 236);
+    --cor-primaria-texto-hover-menu-monitoramento-e-logs: rgb(151, 158, 155);
+}
+
+#mais{display: none}
+
+.logo {
+    /* background-image: url(../../Captura\ de\ Tela\ \(23\).png);
+    background-size: cover; */
+    width: 36.5px;
+    height: 36.5px;
+}
+
+/* ===========//=========== */
+/* MENU-monitoramento-e-logs */
+/* ===========//=========== */
+
+.menu-monitoramento-e-logs {
+    background-color: var(--cor-fundo-menu-monitoramento-e-logs);
+}
+
+.menu-monitoramento-e-logs ul {
+    max-width: 80%;
+    background-color: var(--cor-fundo-menu-monitoramento-e-logs);
+    margin: auto;
+}
+
+.menu-monitoramento-e-logs ul li {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-monitoramento-e-logs > ul > li:first-child > a {
+    float: left;
+    background-color: var(--cor-fundo-referencias-menu-monitoramento-e-logs);
+    color: white;
+}
+
+.menu-monitoramento-e-logs > ul > li:first-child > a:hover {
+    float: left;
+    background-color: var(--cor-fundo-referencias-hover-menu-monitoramento-e-logs);
+    color: white;
+}
+
+.menu-monitoramento-e-logs > ul > li:last-child > a {
+    float: right;
+    background-color: var(--cor-fundo-referencias-menu-monitoramento-e-logs);
+    color: rgb(255, 255, 255);
+}
+
+.menu-monitoramento-e-logs > ul > li:last-child > a:hover {
+    float: right;
+    background-color: var(--cor-fundo-referencias-hover-menu-monitoramento-e-logs);
+    color: white;
+}
+
+.menu-monitoramento-e-logs ul li a {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 15px;
+    display: inline-block;
+    color: white;
+    padding: 10px;
+}
+
+.menu-monitoramento-e-logs li a:hover {
+    background-color: var(--cor-fundo-menu-hover-monitoramento-e-logs);
+    transition: .3s;
+}
+
+.menu-monitoramento-e-logs li a:active {
+    transform: scale(0.85);
+}
+
+.menu-monitoramento-e-logs > ul > li:nth-child(5) > a {
+    float: none;
+    background-color: var(--cor-fundo-fatec-menu-monitoramento-e-logs);
+    color: black;
+}
+
+.menu-monitoramento-e-logs > ul > li:nth-child(5) > a:hover {
+    background-color: var(--cor-fundo-fatec-hover-menu-monitoramento-e-logs);
+    color: white;
+}
+
+/* ===========//=========== */
+/* SUB-MENU-monitoramento-e-logs */
+/* ===========//=========== */
+
+.menu-monitoramento-e-logs ul ul {
+    display: none;
+    position: absolute;
+    max-width: 200%;
+    left: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.menu-monitoramento-e-logs ul li:hover ul {
+    display: block;
+}
+
+.menu-monitoramento-e-logs ul ul li a {
+    display: block;
+}
+
+.menu-monitoramento-e-logs ul ul li a:hover {
+    background-color: var(--cor-fundo-menu-hover-monitoramento-e-logs);
+}
+
+.menu-monitoramento-e-logs ul ul li:last-child a:hover {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: none;
+}
+
+.menu-monitoramento-e-logs ul ul li a:visited {
+    background-color: var(--cor-fundo-menu-visited-monitoramento-e-logs);
+}
+
+.menu-monitoramento-e-logs > ul > li:nth-child(5) > ul> li:nth-child(8) > a {
+  float: none;
+  background-color: var(--cor-fundo-menu-visited-monitoramento-e-logs);
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.menu-monitoramento-e-logs > ul > li:nth-child(5) > ul> li:nth-child(8) > a:hover {
+  float: none;
+  opacity: 80%;
+  color: white;
+}
+
+/* ===========//=========== */
+/* BOTÃO */
+/* ===========//=========== */
+
+#scrollToTopButton {
+    width: 45px; /* Ajuste a largura conforme necessário */
+    height: 45px; /* Ajuste a altura conforme necessário */
+    background-color: var(--cor-fundo-menu-monitoramento-e-logs); /* Cor de fundo do botão */
+    border-radius: 50%; /* Deixa o botão redondo */
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    text-align: center; /* Alinha o conteúdo horizontalmente */
+    line-height: 20px; /* Centraliza verticalmente o conteúdo */
+    font-size: 24px; /* Ajuste o tamanho do caractere conforme necessário */
+    color: #fff; /* Cor do texto */
+    cursor: pointer;
+    display: none; /* Inicialmente, oculta o botão */
+    z-index: 1000; /* Garante que o botão esteja acima de outros elementos */
+}
+  
+#scrollToTopButton:hover {
+    background-color: var(--cor-fundo-menu-hover-monitoramento-e-logs); /* Cor de fundo ao passar o mouse (opcional) */
+}
+  
+#scrollToTopButton.active {
+    display: block; /* Mostra o botão quando está ativo */
+}
+
+/* ===========//=========== */
+/* CONTEUDO */
+/* ===========//=========== */
+
+.conteudo {
+    flex: 1 0 auto;
+    margin-bottom: 48px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    color: black;
+    margin-top: 32px;
+    margin-left: 25px;
+}
+
+.nome-do-site {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.conteudo-principal-escrito-texto {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 15px;
+	margin: 24px 70px;
+    line-height: 2.5;
+    text-align: justify;
+}
+
+.conteudo-principal-escrito-topico {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 800;
+    font-size: 15px;
+	margin: 2px 25px;
+    /* line-height: 1.0; */
+    list-style-type: none;
+}
+
+.conteudo-principal-escrito-subtopico {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 800;
+  font-size: 15px;
+margin: 2px 25px;
+  /* line-height: 1.0; */
+  list-style-type: none;
+}
+
+.conteudo-principal-escrito-texto-topico {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 15px;
+	margin: 2px 50px;
+    line-height: 2.5;
+    list-style-type: none;
+    text-align: justify;
+
+}
+
+.conteudo-principal-escrito-texto-t-t {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 15px;
+	margin: 24px 50px;
+    line-height: 2.5;
+}
+
+.conteudo-principal-escrito-texto-t-t-t {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 15px;
+	margin: 24px 50px;
+    line-height: 2.5;
+}
+
+.conteudo-principal-imagem-software {
+	margin: 28px 240px;
+    height: 320px;
+}
+
+.conteudo-principal-imagem-software-t {
+	/* margin: 48px 25px; */
+    /* margin: 0.5%; */
+    height: 280px;
+}
+
+.links {
+    text-decoration: underline;
+}
+
+.links:hover {
+    opacity: 50%;
+}
+
+.links:visited {
+    color: blue;
+}
+
+.sublinhado {
+    text-decoration: underline;
+}
+
+.temp-margin {
+    margin-top: 100px; /* Ajuste conforme necessário */
+}
+
+/* ===========//=========== */
+/* monitoramento-e-logs */
+/* ===========//=========== */
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.body-monitoramento-e-logs {
+    background: #ffff;
+}
+
+.linha {
+    margin-top: 35px;
+    border-bottom: 0.4px solid black;
+}
+
+.a_video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.a_video:active {
+    opacity: 70%;
+    transform: scale(0.99);
+    transition: .1s;
+}
+
+.video {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 15px;
+    height: 50%;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.rodape-monitoramento-e-logs {
+    flex-shrink: 0;
+    padding: 10px;
+    background-color: var(--cor-fundo-menu-monitoramento-e-logs);
+}
+
+.conteudo-rodape-monitoramento-e-logs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1px;
+}
+
+.conteudo-rodape-paragrafo1-monitoramento-e-logs {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+}
+
+.conteudo-rodape-paragrafo2-monitoramento-e-logs {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    text-decoration: underline;
+}
+
+.conteudo-rodape-paragrafo2-monitoramento-e-logs:active {
+    transform: scale(0.92);
+    transition: .3s;
+}
