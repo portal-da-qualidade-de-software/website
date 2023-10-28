@@ -252,17 +252,5 @@ html {
     font-weight: 700;
     font-size: 14px;
     color: white;
-}
-
-.conteudo-rodape-paragrafo2-index-mobile {
-    font-family: 'Comfortaa', cursive;
-    font-weight: 700;
-    font-size: 14px;
-    color: white;
-    text-decoration: underline;
-}
-
-.conteudo-rodape-paragrafo2-index-mobile:active {
-    transform: scale(0.92);
-    transition: .3s;
+    margin-left: 15%;
 }
