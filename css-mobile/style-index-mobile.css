@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    overflow-x: auto;
+}
+
+:root {
+    --cor-fundo-fatec-menu-index-mobile: #ffff;
+    --cor-fundo-fatec-hover-menu-index-mobile: rgb(182, 182, 182);
+    --cor-fundo-referencias-menu-index-mobile: rgb(20, 177, 240);
+    --cor-fundo-referencias-hover-menu-index-mobile: rgb(8, 117, 189);
+    --cor-fundo-menu-index-mobile: rgb(0, 0, 0);
+    --cor-fundo-menu-hover-index-mobile: rgb(63, 63, 63);
+    --cor-fundo-menu-visited-index-mobile: rgb(105, 52, 196);
+    --cor-primaria-texto-menu-index-mobile: rgb(231, 241, 236);
+    --cor-primaria-texto-hover-menu-index-mobile: rgb(151, 158, 155);
+}
+
+#mais{display: none}
+
+.manual {
+    width: 36.5px;
+    height: 36.5px;
+    background-image: url(../imgs/manuak.png);
+    background-size: cover;
+    transform: scale(0.90);
+}
+
+.logo {
+    background-image: url(../imgs/logo.png);
+    background-size: cover;
+    width: 36.5px;
+    height: 36.5px;
+    transform: scale(0.90);
+}
+
+.menuOculto {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.menuOculto a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #888;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.menuOculto a:hover {
+    color: #fff;
+}
+
+.menuOculto a.atual {
+    background-color: #fff;
+    color: #111;
+}
+
+.btnFechar {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#principal {
+    padding: 16px;
+    transition: margin-left 0.5s;
+}
+
+@media screen and(max-height: 450px) {
+    .menuOculto{padding-top: 15px;}
+    .menuOculto a{font-size: 18;}
+}
+
+/* ===========//=========== */
+/* BOTÃO */
+/* ===========//=========== */
+
+#scrollToTopButton {
+    width: 45px; /* Ajuste a largura conforme necessário */
+    height: 45px; /* Ajuste a altura conforme necessário */
+    background-color: var(--cor-fundo-menu-index-mobile); /* Cor de fundo do botão */
+    border-radius: 50%; /* Deixa o botão redondo */
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center; /* Alinha o conteúdo horizontalmente */
+    line-height: 20px; /* Centraliza verticalmente o conteúdo */
+    font-size: 24px; /* Ajuste o tamanho do caractere conforme necessário */
+    color: #fff; /* Cor do texto */
+    cursor: pointer;
+    display: none; /* Inicialmente, oculta o botão */
+    z-index: 1000; /* Garante que o botão esteja acima de outros elementos */
+}
+  
+#scrollToTopButton:hover {
+    background-color: var(--cor-fundo-menu-hover-index-mobile); /* Cor de fundo ao passar o mouse (opcional) */
+}
+  
+#scrollToTopButton.active {
+    display: block; /* Mostra o botão quando está ativo */
+}
+
+/* ===========//=========== */
+/* CONTEUDO */
+/* ===========//=========== */
+
+.conteudo {
+    flex: 1 0 auto;
+    margin-bottom: 48px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    color: black;
+    margin-top: 10px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.conteudo-principal-escrito-texto {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 15px;
+	margin: 20px 20px;
+    line-height: 2.0;
+    text-align: justify;
+}
+
+.conteudo-principal-escrito-topico {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 800;
+    font-size: 15px;
+	margin: 2px 25px;
+    list-style-type: none;
+}
+
+.conteudo-principal-escrito-texto-topico {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 15px;
+	margin: 2px 50px;
+    line-height: 2.0;
+    text-align: justify;
+}
+
+.links {
+    text-decoration: underline;
+}
+
+.links:hover {
+    opacity: 50%;
+}
+
+.links:visited {
+    color: blue;
+}
+
+.sublinhado {
+    text-decoration: underline;
+}
+
+.temp-margin {
+    margin-top: 100px;
+}
+
+/* ===========//=========== */
+/* index-mobile */
+/* ===========//=========== */
+
+.body-index-mobile {
+    background: #ffff;
+}
+
+.linha {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    border-bottom: 0.4px solid black;
+    width: 90%;
+}
+
+.video {
+    height: 50%;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.rodape-index-mobile {
+    flex-shrink: 0;
+    padding: 10px;
+    background-color: var(--cor-fundo-menu-index-mobile);
+}
+
+.conteudo-rodape-index-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1px;
+}
+
+.conteudo-rodape-paragrafo1-index-mobile {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+}
+
+.conteudo-rodape-paragrafo2-index-mobile {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    text-decoration: underline;
+}
+
+.conteudo-rodape-paragrafo2-index-mobile:active {
+    transform: scale(0.92);
+    transition: .3s;
+}
