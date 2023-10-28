@@ -30,7 +30,7 @@ html, body {
 .manual {
     width: 36.5px;
     height: 36.5px;
-    background-image: url(../imgs/manuak.png);
+    background-image: url(../imgs/manual.png);
     background-size: cover;
     transform: scale(0.90);
 }
