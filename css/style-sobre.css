@@ -289,6 +289,11 @@ body {
     border-bottom: 0.4px solid black;
 }
 
+.foto {
+    height: 80%;
+    width: 80%;
+}
+
 .video {
     height: 50%;
     width: 50%;
