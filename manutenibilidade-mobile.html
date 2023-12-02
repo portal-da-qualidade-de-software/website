@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quais são as principais etapas iniciais?">
+  <script type="text/javascript" src="javascript-pc/manutenibilidade-pc.js"></script>
+  <title>Portal da Qualidade de Software</title>
+  <!-- 
+    The MIT License (MIT)
+
+    Copyright (c) 2015 Michał Sajnóg
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+    -->
+  <link rel="stylesheet" type="text/css" href="css-mobile/style-manutenibilidade-mobile.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="body-manutenibilidade">
+  <aside id="menuOculto" class="menuOculto">
+    <a class="logo" href="sobre.html">&emsp;&emsp;</a>
+    <a class="manual" href="manual.html">&emsp;&emsp;</a>
+    <a>------------/ /------------</a>
+    <a class="subcategoria" href="index.html">Introdução</a>
+    <a>------------/ /------------</a>
+    <a>[ Etapas Iniciais ]</a>
+    <a>----------------------------</a>
+    <a class="subcategoria" href="especificacao-de-requisitos.html">Especificação de Requisitos</a>
+    <a class="subcategoria" href="design-de-software.html">Gerenciamento do Projeto</a>
+    <a class="subcategoria" href="design-de-software.html">Documentação</a>
+    <a>------------/ /------------</a>
+    <a>[ Etapas de Desenvolvimento ]</a>
+    <a>----------------------------</a>
+    <a class="subcategoria" href="design-de-software.html">Design de Software</a>
+    <a class="subcategoria" href="desenvolvimento-do-codigo.html">Desenvolvimento do Código</a>
+    <a class="subcategoria" href="gerenciamento-de-mudanca.html">Gerenciamento de Mudança</a>
+    <a class="subcategoria" href="gerenciamento-de-dependencias.html">Gerenciamento de Dependencias</a>
+    <a class="subcategoria" href="seguranca.html">Segurança</a>
+    <a class="subcategoria" href="performance.html">Performance</a>
+    <a class="subcategoria" href="testes.html">Testes</a>
+    <a>------------/ /------------</a>
+    <a>[ Etapas Finais ]</a>
+    <a>----------------------------</a>
+    <a class="subcategoria" href="usabilidade-e-experiencia-do-usuario.html">Usabilidade e Experiência do Usuário</a>
+    <a class="atual" href="manutenibilidade.html">Manutenibilidade</a>
+    <a class="subcategoria" href="escalabilidade.html">Escalabilidade</a>
+    <a class="subcategoria" href="backup-e-recuperacao.html">Backup e Recuperação</a>
+    <a class="subcategoria" href="compatibilidade.html">Compatibilidade</a>
+    <a class="subcategoria" href="conformidade-com-as-leis-e-regulamentos.html">Conformidade com as Leis e Regulamentos</a>
+    <a class="subcategoria" href="monitoramento-e-logs.html">Monitoramento e Logs</a>
+    <a>------------/ /------------</a>
+    <a class="subcategoria" href="conclusao.html">Conclusão</a>
+    <a>------------/ /------------</a>
+    <a class="subcategoria" href="sobre-mobile.html">Sobre</a>
+    <a>------------/ /------------</a>
+  </aside>
+
+<section id="btn_menu">
+<span id="menuToggle" style="font-size: 24px;cursor: pointer;" onclick="toggleNav()">&#9776;</span>
+</section>
+<script type="text/javascript" src="menu-mobile.js"></script>
+
+  <main class="conteudo">    
+    <section class="conteudo-principal">
+      <div class="conteudo-principal-escrito">
+
+        <div align="center">
+          <!-- NOME DO SITE -->
+          <h1 data-aos="fade-down" class="conteudo-principal-escrito-titulo" id="introducao">PORTAL DA QUALIDADE DE <br> SOFTWARE <br>&emsp;</h1>
+          <div data-aos="fade-down" class="linha"></div>
+        </div>
+
+        <!-- MANUTENIBILIDADE -->
+        <h1 data-aos="fade-down" class="conteudo-principal-escrito-subtitulo">=> Manutenibilidade</h1>
+
+        <div data-aos="fade-up" class="conteudo-principal-escrito-subtopico"><strong># Facilidade de Atualizar e Manter o Código</strong></div>
+        <div data-aos="fade-up" class="conteudo-principal-escrito-texto-topico"><p>&emsp;&emsp;Manutenibilidade de software é o atributo que caracteriza a facilidade de modificação ou adaptação de um software. É muitas vezes quantificada em termos do tempo médio requerido para efetivar a revisão do software para eliminar um erro.</p></div>
+        <div data-aos="fade-up" class="conteudo-principal-escrito-texto-topico"><p>&emsp;&emsp;A facilidade de promover a manutençao de um software é uma caracterisitica indispensável e garante o sucesso do sistema a longo prazo. A manutenção do software está ligada a possibilidade de ser modificado, corrigido, aprimorado após a implementação inicial entre todos esses pontos citados a capacidade de atualizar o codigo de forma eficaz é fundamental. A seguir exploraremos em detalhes a importancia da atualização do codigo e manutenção do software de maneira eficazes oferecendo um produto mais robusto e duradouro.</p></div>
+        <div>
+          <img data-aos="fade-up" src="https://img.freepik.com/free-vector/flat-hand-drawn-web-developers-illustration_23-2148842972.jpg?w=1380&t=st=1696938491~exp=1696939091~hmac=146b61ffdf2bd0e0f5d2194705aa7985f4a7bbd8c4f376c1dd62edfe2657f398" alt="broken" class="video">
+          <p data-aos="fade-up" class="video" align="center">Image by <a href="https://www.freepik.com/free-vector/flat-hand-drawn-web-developers-illustration_12302679.htm#query=code%20updating&position=36&from_view=search&track=ais">Freepik</a></p>
+        </div>
+        <div data-aos="fade-up" class="linha"></div><br>
+
+        <div data-aos="fade-up" class="conteudo-principal-escrito-subtopico"><strong># Agilidade em Responder às Mudanças</strong></div>
+        <div data-aos="fade-up" class="conteudo-principal-escrito-texto-topico"><p>&emsp;&emsp;A essencia do desenvolvimento de software é dinâmica e por isso muitss vezes as mudanças de alguns requisitos podem ser solicitados pelo cliente ou mesmo evoluirem a medida que o projeto se desenrola. Se o código for estruturado de maneira que as alterações ou atualizações possam ser realizadas sem grandes impactos no projeto a equipe atuará com mais rapidez e eficácia.</p></div>
+        <div>
+          <img data-aos="fade-up" src="https://img.freepik.com/free-vector/greater-than-less-than-sign-wrench-gear-hands-tools-programmer-flat-vector-illustration-programming-coding-process-modern-technology-occupation-concept_74855-24577.jpg?w=1380&t=st=1696938532~exp=1696939132~hmac=f57d355af251e31c6242b7f71dd7fd0b6d281ea2dd397b6adad954b348f50426" alt="broken" class="video">
+          <p data-aos="fade-up" class="video" align="center"><a href="https://www.freepik.com/free-vector/greater-than-less-than-sign-wrench-gear-hands-tools-programmer-flat-vector-illustration-programming-coding-process-modern-technology-occupation-concept_26921781.htm#query=code%20change&position=4&from_view=search&track=ais">Image by pch.vector</a> on Freepik</p>
+        </div>
+        <div data-aos="fade-up" class="linha"></div><br>
+
+        <div data-aos="fade-up" class="conteudo-principal-escrito-subtopico"><strong># Redução de Bugs e Problemas de Desempenho</strong></div>
+        <div data-aos="fade-up" class="conteudo-principal-escrito-texto-topico"><p>&emsp;&emsp;Códigos mau escritos e deficies de serem atualizados geralmente colecionam bugs e sofrem com a queda de desempenho ao longo do tempo. Isso ocorre porque as intervenções e correções no sistema acabam gerando novos problemas e surgem outros erros, por isso é tão importante que a estrutura do código seja acessível, resultando em um sistema mais confiável e eficaz.</p></div>
+        <div>
+          <img data-aos="fade-up" src="https://img.freepik.com/free-vector/bug-fixing-concept-illustration_114360-3355.jpg?w=826&t=st=1696938582~exp=1696939182~hmac=75e4466229f7c0fecb78a158822f05e9f3f61e87d0f97fa6c19a365dc93b09fe" alt="broken" class="video">
+          <p data-aos="fade-up" class="video" align="center"><a href="https://www.freepik.com/free-vector/bug-fixing-concept-illustration_9936540.htm#query=software%20bugs&position=4&from_view=search&track=ais">Image by storyset</a> on Freepik</p>
+        </div>
+        <div data-aos="fade-up" class="linha"></div><br>
+
+        <div data-aos="fade-up" class="conteudo-principal-escrito-subtopico"><strong># Colaboração Efetiva entre a Equipe</strong></div>
+        <div data-aos="fade-up" class="conteudo-principal-escrito-texto-topico"><p>&emsp;&emsp;Um codigo bem estruturado, bem organizado e documentado pode ser facilmente atualizado por qualquer membro da equipe. Isso não apenas acelera o desenvolvimento do software como também melhora a coesao da equipe e a qualidade do produto final.</p></div>
+        <div>
+          <img data-aos="fade-up" src="https://img.freepik.com/free-vector/forming-team-leadership-concept-illustration_114360-13973.jpg?w=1380&t=st=1696938629~exp=1696939229~hmac=6b6f36ca49a01f975b3f2c77d5c46adc1f919e191e0674627c7f10f9fdc792f7" alt="broken" class="video">
+          <p data-aos="fade-up" class="video" align="center"><a href="https://www.freepik.com/free-vector/forming-team-leadership-concept-illustration_35294599.htm#query=team&position=32&from_view=search&track=sph">Image by storyset</a> on Freepik</p>
+        </div>
+        <div data-aos="fade-up" class="linha"></div><br>
+
+        <div data-aos="fade-up" class="conteudo-principal-escrito-subtopico"><strong># Aumento da Vida Útil do Software</strong></div>
+        <div data-aos="fade-up" class="conteudo-principal-escrito-texto-topico"><p>&emsp;&emsp;A vida util do software está diretamente ligada a manutenção continua do sistema, atraves principalmente das atualizações e os impactos são facilmente observados na redução dos custos associados ao desenvolvimento de novas versões a partir do zero.</p></div>
+        <div>
+          <img data-aos="fade-up" src="https://img.freepik.com/free-vector/flat-design-devops-illustration_52683-84086.jpg?w=826&t=st=1696938666~exp=1696939266~hmac=ab922f494ca03c8dab3eb80703ae4e4ce9497ab580602c5c5dcdee15619d5765" alt="broken" class="video">
+          <p data-aos="fade-up" class="video" align="center"><a href="https://www.freepik.com/free-vector/flat-design-devops-illustration_25644111.htm#query=software%20life&position=43&from_view=search&track=ais">Image by pikisuperstar</a> on Freepik</p>
+        </div>
+        <div data-aos="fade-up" class="linha"></div><br>
+
+        <div data-aos="fade-up" class="conteudo-principal-escrito-subtopico"><strong># Melhoria da Satisfação do Cliente</strong></div>
+        <div data-aos="fade-up" class="conteudo-principal-escrito-texto-topico"><p>&emsp;&emsp;Apesar da importância do envolvimento e do foco no cliente em times ágeis, além do fato de que o envolvimento do cliente desde as fases iniciais do projeto ajuda a entender o que é valor para ele, existem várias barreiras para que isso ocorra de forma adequada, sendo as principais: falta de tempo e envolvimento do cliente por falta de confiança, falta de entendimento por parte do cliente, pessoas sem as competências corretas envolvidas nos projetos e falta de comunicação.</p></div>
+        <div data-aos="fade-up" class="conteudo-principal-escrito-texto-topico"><p>&emsp;&emsp;Por isso estar atento ao que esse cliente busca e estar pronto para entregar essa demanda de maneira pratica e simples que facilite a utilização do sistema, isso por sua vez, contribui para a reputação e é mais propenso a manter clientes satisfeitos e fidelizados.</p></div>
+        <div>
+          <img data-aos="fade-up" src="https://img.freepik.com/free-vector/credit-score-progress-bar-2_78370-647.jpg?w=1380&t=st=1696938722~exp=1696939322~hmac=cbfde4c54e4d5bbc46b9c1e7199c942aa6b284fcbe7f423dbc2914f2029d73c7" alt="broken" class="video">
+          <p data-aos="fade-up" class="video" align="center"><a href="https://www.freepik.com/free-vector/credit-score-progress-bar-2_35514474.htm#query=customer%20satisfaction&position=27&from_view=search&track=ais">Image by juicy_fish</a> on Freepik</p>
+        </div>
+        <div data-aos="fade-up" class="conteudo-principal-escrito-texto-topico"><p>&emsp;&emsp;A facilidade de atualizar o código desempenha um papel fundamental na manutenibilidade e qualidade de software. Equipes de desenvolvimento devem priorizar práticas que promovam essa capacidade, incluindo a adoção de boas práticas de codificação, documentação abrangente e estratégias eficazes de controle de versão. Ao fazer isso, asseguram que o software continue a evoluir de maneira eficaz para atender às necessidades em constante mudança dos usuários e do mercado. Isso não apenas beneficia a equipe de desenvolvimento, mas também os clientes e a reputação da empresa como um todo.</p></div>
+        <div>
+          <img data-aos="fade-up" src="https://img.freepik.com/free-vector/computer-troubleshooting-concept-illustration_114360-7616.jpg?w=826&t=st=1696938754~exp=1696939354~hmac=890111e0592ed36ce4e0ac2b10decfbd4043f80225acfef932254a4b0d08aefe" alt="broken" class="video">
+          <p data-aos="fade-up" class="video" align="center"><a href="https://www.freepik.com/free-vector/computer-troubleshooting-concept-illustration_19834585.htm#query=software%20maintenace&position=0&from_view=search&track=ais">Image by storyset</a> on Freepik</p>
+        </div>
+        <div data-aos="fade-up" class="linha"></div><br>
+
+        <div data-aos="fade-up" class="conteudo-principal-escrito-subtopico"><strong># Baixo Acoplamento e Alta Coesão</strong></div>
+        <div data-aos="fade-up" class="conteudo-principal-escrito-texto-topico"><p>&emsp;&emsp;Coesão e Acoplamento são princípios de engenharia de software muito utilizados. Quando queremos ter uma arquitetura madura e sustentável, temos que levar em conta estes dois princípios, pois cada um deles tem um propósito específico que visa melhorar o design do software. O que acontece é que muitas pessoas não sabem a diferença entre eles e acabam não conseguindo obter os benefícios que colocá-los em prática na hora de se desenhar a arquitetura de um software.</p></div>
+        <div data-aos="fade-up" class="conteudo-principal-escrito-texto-topico"><p>&emsp;&emsp;Coesão está, na verdade, ligado ao princípio da responsabilidade única, que foi introduzido por Robert C. Martin no inicio dos anos 2000 e diz que uma classe deve ter apenas uma única responsabilidade e realizá-la de maneira satisfatória, ou seja, uma classe não deve assumir responsabilidades que não são suas . Uma vez sendo ignorado este princípio, passamos a ter problemas, como dificuldades de manutenção e de reuso. Observe o exemplo abaixo:</p></div>
+        <div class="a_video">
+          <a href="imgs/etapas finais/manutenibilidade/1.png" target="_blank">
+            <img data-aos="fade-up" src="imgs/etapas finais/manutenibilidade/1.png" alt="broken" class="video">
+          </a>
+        </div><br>
+        <div data-aos="fade-up" class="conteudo-principal-escrito-texto-topico"><p>&emsp;&emsp;Como visto no exemplo acima, a classe Programa tem responsabilidades que não são suas, como obter um produto e gravá-lo no banco de dados. Então, dizemos que esta classe não está coesa, ou seja, ela tem responsabilidades demais, e o que é pior, responsabilidades que não são suas. Observe abaixo outro exemplo:</p></div>
+        <div class="a_video">
+          <a href="imgs/etapas finais/manutenibilidade/2.png" target="_blank">
+            <img data-aos="fade-up" src="imgs/etapas finais/manutenibilidade/2.png" alt="broken" class="video">
+          </a>
+        </div><br>
+        <div data-aos="fade-up" class="conteudo-principal-escrito-texto-topico"><p>&emsp;&emsp;Vemos no exemplo acima, uma clara separação de responsabilidades, o que contribui para um design desacoplado e organizado. O formulário não assume o papel de cadastrar o produto, ele pede a quem tem a responsabilidade para que faça tal tarefa. O que temos que ter em mente é que uma classe deve ser responsável por exercer uma única responsabilidade e fazer outras classes cooperarem quando necessário. Já o acoplamento significa o quanto uma classe depende da outra para funcionar. E quanto maior for esta dependência entre ambas, dizemos que estas classes elas estão fortemente acopladas. O forte acoplamento também nos traz muitos problemas, problemas até semelhantes aos que um cenário pouco coeso nos traz. Observe o diagrama abaixo:</p></div>
+        <div class="a_video">
+          <a href="imgs/etapas finais/manutenibilidade/3.png" target="_blank">
+            <img data-aos="fade-up" src="imgs/etapas finais/manutenibilidade/3.png" alt="broken" class="video">
+          </a>
+        </div><br>
+        <div data-aos="fade-up" class="conteudo-principal-escrito-texto-topico"><p>&emsp;&emsp;Como podemos ver na cadeia de classes acima, o forte acoplamento na mesma, torna muito custoso a sua manutenção e o seu gerenciamento, pois qualquer mudança vai afetar toda a cadeia de classes. A saída para cenários como este, é o que chamamos de Inversão de Controle que foi abordado em um post aqui. E uma maneira de mudar o quadro acima, seria inverter o controle e utilizar o padrão de injeção de dependência, para diminuir o acoplamento e evitar futuros problemas. Observe o diagrama abaixo com as devidas alterações:</p></div>
+        <div class="a_video">
+          <a href="imgs/etapas finais/manutenibilidade/4.png" target="_blank">
+            <img data-aos="fade-up" src="imgs/etapas finais/manutenibilidade/4.png" alt="broken" class="video">
+          </a>
+        </div><br>
+        <div data-aos="fade-up" class="conteudo-principal-escrito-texto-topico"><p>&emsp;&emsp;Perceba como a dependência está na direção oposta, ou seja, não é mais de implementações concretas que estão baseados os relacionamentos entre as classes. Observe que utilizar abstrações, mantém um cenário que estará preparado para os impactos que as possíveis mudanças poderiam trazer.</p></div>
+        <div data-aos="fade-up" class="conteudo-principal-escrito-texto-topico"><p>&emsp;&emsp;Repare que a classe Produto se relaciona com uma abstração(interface) de DBWrapper, ou seja, tem uma classe chamada DBWrapperSqlServer que implementa esta interface, amanhã, o banco de dados passar a ser Oracle, basta adicionar uma classe DBWrapperOracle para atender a mudança de banco de dados,. Trabalhando desta maneira passamos a não ter medo das mudanças, pois em se tratando de software, elas irão ocorrer com muita frequência, e não tivermos um cenário suscetível a elas encontraremos sério problemas para evoluir o software.</p></div>
+        <div data-aos="fade-up" class="conteudo-principal-escrito-texto-topico"><p>&emsp;&emsp;Sabemos que no mundo “real” nem sempre podemos ter um cenário ideal, que é com um baixo acoplamento e uma alta coesão. Mas como arquitetos, temos que saber tomar a decisão correta, pois determinadas decisões não poderão ser revertidas, dependendo da fase em que estiver o projeto ou o tipo de decisão tomada. Ter classes com responsabilidades claras e um baixo acoplamento, embora não seja fácil de serem construídas, nos traz benefícios como baixo impacto em uma possível manutenção, gerenciamento e mudança no negócio facilitados. Também não podemos esquecer que as aplicações evoluem, mudam e, muitas das vezes, se transformam. Se ignorarmos as melhores práticas na hora de desenhar uma arquitetura, poderemos ter sérios problemas. E para nos auxiliar, temos o princípio da responsabilidade única e a inversão de controle, cujo objetivo é obter-se um cenário de responsabilidades claras entre nossas classes e um baixo acoplamento.</p></div>
+        <div>
+          <img data-aos="fade-up" src="https://img.freepik.com/free-vector/media-player-software-computer-application-geolocation-app-location-determination-function-male-implementor-programmer-cartoon-character_335657-2579.jpg?w=826&t=st=1696938899~exp=1696939499~hmac=ece33e5349e1c852b3a249dc226bc8675ef52e7e34c2808911d94b2d74187887" alt="broken" class="video">
+          <p data-aos="fade-up" class="video" align="center"><a href="https://www.freepik.com/free-vector/media-player-software-computer-application-geolocation-app-location-determination-function-male-implementor-programmer-cartoon-character_11669699.htm#page=2&query=software%20low%20coupling&position=20&from_view=search&track=ais">Image by vectorjuice</a> on Freepik</p>
+        </div>
+        <div data-aos="fade-up" class="linha"></div><br>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape-manutenibilidade-mobile">
+    <section class="conteudo-rodape-manutenibilidade-mobile">
+        <a class="conteudo-rodape-paragrafo1-manutenibilidade-mobile">Portal da Qualidade de Software - <strong>2023</strong></a>
+    </section>
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+      AOS.init({duration: 1200});
+  </script>
+  <script type="text/javascript" src="scripts.js"></script>
+  <script type="text/javascript" src="scroll.js"></script>
+  <button id="scrollToTopButton">↑<script type="text/javascript" src="botao.js"></script></button>
+</body>
+</html>
